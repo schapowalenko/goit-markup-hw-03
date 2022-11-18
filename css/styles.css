@@ -47,7 +47,7 @@ body{
 }
 /* КОНТЕЙНЕР */
 .container {
-    outline: 1px solid tomato;
+    
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -152,7 +152,7 @@ body{
     margin-bottom: 94px;
 }
 .hero .hero-title{
-    outline: 1px solid tomato;
+    
     padding-top: 200px;
     margin-top: 0;
     margin-bottom: 30px;
@@ -306,7 +306,7 @@ body{
 /* КНОПКА */
 
 .button-hero{
-    margin-left: 492px;
+    margin-left: 477px;
     border: 1px solid transparent;
     display: inline-block;
     margin-top: 0;
