@@ -14,7 +14,7 @@
             --primary-white-color:#FFFFFF;
             --primary-black-color:#000000;
             --background-button-color:#F5F4FA;
-            
+            --line-color:#ececec;
 
           }
 
@@ -87,9 +87,14 @@ body{
     text-decoration: none;
 }
 /* header */
+.line{
+    border-bottom: 1px solid var(--line-color);
+}
 .header{
+    
     display: flex;
     align-items: center;
+    
 
 }
 /* навігація */
@@ -199,6 +204,7 @@ body{
     margin-left: 30px;
 }
 .worck{
+    margin-bottom: 94px;
     display: flex;
 }
 .section .section-title {
@@ -231,6 +237,8 @@ body{
 }
 .team .item{
     
+    border-radius: 4px;
+    border: 1px solid var(--line-color);
     background-color: var(--primary-white-color);
 }
 .section-team .section-title{
@@ -267,15 +275,38 @@ body{
 }
 
 /* ПОРТФОЛІО */
+.project .item+.item{
+    margin-left: 8px;
+
+}
+
+
+.project-link{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 60px;
+    
+}
+.project-link .item {
+    
+    border: 1px solid var(--line-color);
+    margin-bottom: 30px;
+}
 .project{
+    justify-content: center;
+    display: flex;
     margin-top: 0;
     margin-bottom: 50px;
     padding-top: 98px;
 
     }
 .project-link .title{
-    margin-top: 0;
+
+    margin-top: 20px;
     margin-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
     color:var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -294,8 +325,12 @@ body{
     letter-spacing: 0.03em;
 }
 .project-link .subtitle{
+    
+    
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
