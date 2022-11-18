@@ -48,7 +48,7 @@ body{
 /* КОНТЕЙНЕР */
 .container {
     outline: 1px solid tomato;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -58,6 +58,10 @@ body{
 
 
 .logo{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
     color: var(--primary-black-color);
     font-family: raleway, sans-serif;
     letter-spacing: 0.03em;
@@ -72,7 +76,8 @@ body{
     
 }
 .logo-footer{
-    
+    padding-bottom: 20px;
+    display: block;
     color: var(--primary-white-color);
     font-family: raleway, sans-serif;
     letter-spacing: 0.03em;
@@ -81,10 +86,25 @@ body{
     line-height: 1.19;
     text-decoration: none;
 }
+/* header */
+.header{
+    display: flex;
+    align-items: center;
+
+}
 /* навігація */
+.site-nav{
+    display: flex;
+    margin-right: 344px;
+}
+.site-nav .item+.item{
+    margin-left: 50px;
 
-
+}
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -92,7 +112,17 @@ body{
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+.contact-nav .item+.item{
+    margin-left: 50px;
+
+}
+.contact-nav{
+    display: flex;
+}
 .contact-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color:var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -141,6 +171,12 @@ body{
 .peculiarities{
     margin-bottom: 94px;
 }
+.peculiarities-list {
+    display: flex;
+}
+.peculiarities-list .item+.item{
+    margin-left: 30px;
+}
 .peculiarities-list .title{
     margin-top: 0;
     margin-bottom: 10px;
@@ -159,7 +195,12 @@ body{
 }
 
 /* Чим ми займаємося */
-
+.worck .item+.item{
+    margin-left: 30px;
+}
+.worck{
+    display: flex;
+}
 .section .section-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -174,17 +215,26 @@ body{
 /* наша команда */
 .section-team{
    padding-top: 94px;
-    background-color: var(--background-button-color);
+   padding-bottom: 94px;
+   background-color: var(--background-button-color);
     
 }
-.team-link{
+.team .item+.item{
+    margin-left: 30px;
+}
+
+.team{
+    display: flex;
     margin-top: 0;
-    margin-bottom: 94px;
+    
+    
+}
+.team .item{
     
     background-color: var(--primary-white-color);
-    display: inline-block;
 }
 .section-team .section-title{
+    margin-top: 0;
     margin-bottom: 50px;
     color: var(--title-text-color);
     font-weight: 700;
@@ -194,10 +244,11 @@ body{
     letter-spacing: 0.03em;
 
 }
-.team-link .title{
+.team .title{
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     padding-top: 30px;
+    padding-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -205,7 +256,8 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
 }
-.team-link .subtitle{
+.team .subtitle{
+    
     margin-top: 0;
     margin-bottom: 30px;
     font-size: 16px;
@@ -254,6 +306,7 @@ body{
 /* КНОПКА */
 
 .button-hero{
+    margin-left: 492px;
     border: 1px solid transparent;
     display: inline-block;
     margin-top: 0;
@@ -307,7 +360,7 @@ body{
 .footer-link .link{
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    
+    padding-bottom: 9px;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -317,6 +370,9 @@ body{
 .footer-link .link:focus{
     color: var(--accent-color);
 
+}
+.address .list{
+    padding-bottom: 9px;
 }
 .address{
     
